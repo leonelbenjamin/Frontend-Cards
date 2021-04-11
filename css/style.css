@@ -1,0 +1,90 @@
+/*---Reseteo de estilos y Variables---*/
+:root{
+    /*Primary*/
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /*Nature*/
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--VeryLightGray)
+}
+
+
+
+/*---Section text---*/
+.container-text{
+    padding: .5rem 0 2rem;
+    text-align: center; 
+    margin: 2rem;
+}
+.title{
+    font-weight: 200;
+}
+span{
+    font-weight: 600;
+}
+p{
+    color: var(--GrayishBlue);
+}
+
+/*---Section cards---*/
+.conteiner-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.card {
+    background: #fff;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 18px 28px 26px -13px rgba(0,0,0,0.46);
+}
+.card-text{
+    max-width: 24rem;
+    padding: 0 4rem 0 0;
+}
+.cyan{
+    border-top: solid .5rem var(--Cyan);
+}
+.red{
+    border-top: solid .5rem var(--Red);
+}
+.blue{
+    border-top: solid .5rem var(--Blue);
+}
+.orange{
+    border-top: solid .5rem var(--Orange);
+}
+.icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (min-width: 700px) { 
+    .conteiner-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin: 2.2rem 1rem;
+    }
+}
